@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Mail, MessageSquare, Phone, LifeBuoy } from "lucide-react";
@@ -6,6 +5,10 @@ import { Button } from "@/components/ui/button";
 
 const Support = () => {
   const navigate = useNavigate();
+
+  const handleLiveChatClick = () => {
+    window.open('https://t.me/Bluepay25bot', '_blank');
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -33,7 +36,7 @@ const Support = () => {
             </div>
             <Button 
               className="w-full mt-4 bg-blue-600 hover:bg-blue-700"
-              onClick={() => window.open('mailto:bluepaylimited006@gmail.com')}
+              onClick={() => window.open('mailto:surdarkw@gmail.com')}
             >
               Contact via Email
             </Button>
@@ -51,7 +54,7 @@ const Support = () => {
             </div>
             <Button 
               className="w-full mt-4 bg-blue-600 hover:bg-blue-700"
-              onClick={() => window.open('https://t.me/bluepay_service')}
+              onClick={() => window.open('https://t.me/Officialbluepay1')}
             >
               Open Telegram
             </Button>
@@ -69,7 +72,7 @@ const Support = () => {
             </div>
             <Button 
               className="w-full mt-4 bg-blue-600 hover:bg-blue-700"
-              onClick={() => window.open('https://wa.me/2349015205318')}
+              onClick={() => window.open('https://wa.me/2348161138485')}
             >
               Chat on WhatsApp
             </Button>
@@ -87,6 +90,7 @@ const Support = () => {
             </div>
             <Button 
               className="w-full mt-4 bg-blue-600 hover:bg-blue-700"
+              onClick={handleLiveChatClick}
             >
               Start Live Chat
             </Button>
@@ -95,7 +99,7 @@ const Support = () => {
 
         <div className="mt-8 text-center">
           <p className="text-gray-500">Available 24/7 for your support needs</p>
-          <p className="text-blue-600 font-medium mt-2">bluepaylimited006@gmail.com</p>
+          <p className="text-blue-600 font-medium mt-2">surdarkw@gmail.com </p>
         </div>
       </div>
     </div>
